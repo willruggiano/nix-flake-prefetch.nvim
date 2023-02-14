@@ -28,23 +28,6 @@ end
 ---@field bufnr number
 ---@field cursor Position
 
--- local sexpr = [[
--- (binding
---   expression: (apply_expression
---     function: (variable_expression
---       name: (identifier) @fetcher
---     )
---     argument: (_
---       (binding_set
---         binding: (binding
---           attrpath: (attrpath attr: (identifier))
---           expression: (_ (_))
---         ) @args
---       )
---     )
---   ) @block
--- )
--- ]]
 local sexpr = [[
 (binding
   expression: (apply_expression

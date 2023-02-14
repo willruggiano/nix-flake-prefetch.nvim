@@ -13,6 +13,8 @@ Fetch derivation src hashes using [nix3-flake-prefetch(1)][nix-flake-prefetch].
 - [x] support `fetchFromGitHub`
 - [ ] support `fetchgit` with a `rev` attribute
 - [x] provide a [cmp] source
+- [ ] support interpolated values, e.g. `rev = "v${version};`
+- [ ] [cmp] source for revs
 
 ## Setup
 
