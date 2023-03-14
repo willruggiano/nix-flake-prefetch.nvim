@@ -109,6 +109,10 @@ end
 
 function lib.can_complete(bufnr)
   local cursor_node = ts.get_node_at_cursor()
+  if cursor_node == nil then
+    return false
+  end
+
   if cursor_node:type() ~= "string_expression" then
     return false
   end
